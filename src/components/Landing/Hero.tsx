@@ -31,7 +31,7 @@ const Hero = (): JSX.Element => {
         <div className="flex w-full mx-auto text-left">
           <div className="relative inline-flex items-center mx-auto align-middle">
             <div className="text-center">
-              <motion.h1 initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={textVariant} className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-black  sm:text-7xl">
+              <motion.h1 initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={textVariant} className="mx-auto max-w-4xl font-display text-6xl font-bold tracking-normal text-black sm:text-7xl">
                 Explore Your Financial <br className="hidden lg:block" />
                 Solutions
               </motion.h1>

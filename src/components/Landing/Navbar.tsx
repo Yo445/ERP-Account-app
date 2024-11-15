@@ -1,36 +1,35 @@
 import React from 'react';
 import { motion } from "framer-motion";
-
+import { TiThMenuOutline } from "react-icons/ti";
+import Logo from "./../../assets/imgs/logo3.png";
 const Navbar = (): JSX.Element => {
     return (
-        <div className='w-4/5 m-auto flex justify-between items-center py-5'>
-        <h1 className='text-xl font-bold'>Preciso</h1>
-        <motion.ul 
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        transition={{delay: 0.3, staggerChildren: 0.1}}
-
-        className='flex items-center space-x-5'>
-            <motion.li
-            whileHover={{scale:1.1}} whileTap={{scale: 0.95}}
-            ><a href="">Prot</a></motion.li>
-            <motion.li
-            whileHover={{scale:1.1}} whileTap={{scale: 0.95}}
-            ><a href="">Prot</a></motion.li>
-            <motion.li
-            whileHover={{scale:1.1}} whileTap={{scale: 0.95}}
-            ><a href="">Prot</a></motion.li>
-            <motion.li
-            whileHover={{scale:1.1}} whileTap={{scale: 0.95}}
-            ><a href="">Prot</a></motion.li>
-        </motion.ul>
-
-        <motion.button 
-        whileHover={{ scale:1.2 }}
-        whileTap={{ scale:0.9 }}
-        className='px-5 py-2 border-black border-2 boder-black font-semibold rounded-full hover:bg-black hover:text-white duration-300'>Register</motion.button>
-        {/* <button className='px-5 py-2 border boder-black font-semibold rounded-full hover:bg-black'>Login</button> */}
-        </div>
+        <header className="text-slate-700 bg-[#70d560]  relative mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center">
+        <a href="#" className="ml-10 flex items-center whitespace-nowrap text-2xl font-black">
+            <img src={Logo} alt="" className="w-[5em] " />
+        </a>
+        <input type="checkbox" className="peer hidden" id="navbar-open" />
+        <label className="absolute top-5 right-5 cursor-pointer lg:hidden" htmlFor="navbar-open">
+          {/* <svg className="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg> */}
+          <TiThMenuOutline fontSize={"25px"} color='black'/>
+        </label>
+        <nav aria-label="Header Navigation" className="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row">
+          <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
+            <li className="lg:mr-12"><a className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Components</a></li>
+            <li className="lg:mr-12"><a className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Pricing</a></li>
+            <li className="lg:mr-12"><a className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Contact</a></li>
+            <li className="lg:mr-12"><a className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">FAQ</a></li>
+          </ul>
+          <hr className="mt-4 w-full lg:hidden" />
+          <div className="my-4 mr-8 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-5 lg:space-y-0">
+            <a href="#" title="" className="font-semibold whitespace-nowrap rounded-[50px]  px-8 py-3 text-black border-2 border-black hover:bg-black hover:text-white transition duration-300  font-medium">Signup</a>
+            <a href="#" title="" className="font-semibold whitespace-nowrap rounded-[50px]  px-8 py-3 text-white bg-black  rounded-full hover:bg-[#70d560] hover:text-black hover:border-1 hover:border-black transition duration-300 font-medium ">Login</a>
+          </div>
+        </nav>
+      </header>
+    
     );
 }
 // #endregion
