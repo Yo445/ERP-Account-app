@@ -29,7 +29,7 @@ import FlipLink from "../custom/FlipLink";
 
   return (
     <div className="bg-c1 py-10">
-    <section className="grid place-content-center gap-3 px-8 py-24 text-black text-center">
+    <section className="inline-flex grid place-content-center gap-4 px-4 py-24 text-black text-center">
       <motion.h1 initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={textVariant} ><FlipLink >Explore Your Financial</FlipLink></motion.h1>
       <motion.h1 initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={textVariant} ><FlipLink>Solutions</FlipLink>
       </motion.h1>

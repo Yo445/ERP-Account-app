@@ -11,7 +11,7 @@ const LaningPage = (): JSX.Element => {
     return(
         <div className="bg-[url('/bg.svg')]">
             <Navbar />
-            <Stats />
+            <Hero />
             <Insights />
             {/* <Stats />
             <Pricing />
