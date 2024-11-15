@@ -10,14 +10,12 @@ import Footer from './Footer';
 const LaningPage = (): JSX.Element => {
     return(
         <div className="bg-[url('/bg.svg')]">
-            <div className='bg-c1'>
             <Navbar />
-            <Hero />
-            </div>
-            <Insights />
             <Stats />
+            <Insights />
+            {/* <Stats />
             <Pricing />
-            <Faq />
+            <Faq /> */}
             <Footer />
         </div>
 

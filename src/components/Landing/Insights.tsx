@@ -62,7 +62,7 @@ const Insights = (): JSX.Element => {
       <div className="md:w-1/2 flex flex-col md:flex-row md:space-x-5 space-y-5 md:space-y-0">
         {insightsData.map((insight, index) =>
           <motion.div
-            className="w-full p-4 border-4 border-white/50 rounded-xl space-y-4"
+            className="w-full p-4 border-4 border-black rounded-xl space-y-4"
             key={index}
             initial="hidden"
             whileInView="visible"

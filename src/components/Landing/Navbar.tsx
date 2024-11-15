@@ -1,10 +1,11 @@
 import React from 'react';
-import { motion } from "framer-motion";
 import { TiThMenuOutline } from "react-icons/ti";
+import { TiThMenu } from "react-icons/ti";
+
 import Logo from "./../../assets/imgs/logo3.png";
 const Navbar = (): JSX.Element => {
     return (
-        <header className="text-slate-700 bg-[#70d560]  relative mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center">
+        <header className="text-slate-700 bg-c1  relative mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center">
         <a href="#" className="ml-10 flex items-center whitespace-nowrap text-2xl font-black">
             <img src={Logo} alt="" className="w-[5em] " />
         </a>
@@ -13,7 +14,7 @@ const Navbar = (): JSX.Element => {
           {/* <svg className="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg> */}
-          <TiThMenuOutline fontSize={"25px"} color='black'/>
+          <TiThMenu fontSize={"25px"} color='black'/>
         </label>
         <nav aria-label="Header Navigation" className="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row">
           <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">

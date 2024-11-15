@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const Hero = (): JSX.Element => {
@@ -35,7 +34,7 @@ const Hero = (): JSX.Element => {
                 Explore Your Financial <br className="hidden lg:block" />
                 Solutions
               </motion.h1>
-     
+
               <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                 <div className="mt-3 rounded-lg sm:mt-0">
                   <motion.button
